@@ -1,0 +1,405 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.loadingBox{
+	width: 100%;
+	height: 100%;
+	background: url(../img/loadingbg.png) no-repeat center /cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	transition: transform 1s linear 1s;
+}
+.loadingBox .girl{
+	width: 334px;
+	height: 324px;
+	background: url(../img/startBig.png) no-repeat center /cover;
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translate3d(-50%,0,0);
+}
+.loadingBox .panel{
+	width: 513px;
+	height: 193px;
+	background: url(../img/Panel.png) no-repeat center /cover;
+	position: absolute;
+	top: 320px;
+	left: 50%;
+	transform: translate3d(-55%,0,0);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.loadingBox .loading{
+	width: 325px;
+	height: 91px;
+	background: url(../img/loading.png) no-repeat center /cover;
+	position: absolute;
+	top: 275px;
+	left: 50%;
+	transform: translate3d(-55%,0,0);
+}
+.loadingBox .panel .tiao{
+	width: 350px;
+	height: 38px;
+	padding: 8px;
+	box-sizing: border-box;
+	background: url(../img/tiao.png) no-repeat center /cover;
+	position: relative;
+}
+.loadingBox .panel p:nth-child(1){
+	margin-top: 30px;
+	color: #b5591a;
+	font-size: 24px;
+	font-weight: bold;
+}
+.loadingBox .panel p:nth-child(3){
+	margin-bottom: 20px;
+	color: #b65c1d;
+	font-size: 16px;
+	font-weight: bold;
+}
+.loadingBox .panel .tiao .jindu{
+	width: 0;
+	height: 100%;
+	border-radius: 16px;
+	background: linear-gradient(to bottom,#e0f59c,#87d337);
+	box-shadow: 2px -2px 5px 0px #4b9324 inset,0px 2px 5px 0px #9ce373 inset;
+}
+.loadingBox .panel .tiao p{
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0);
+	-webkit-text-stroke: 1px #22712a;
+}
+.startBox{
+	width: 100%;
+	height: 100%;
+	background: url(../img/startbg.png) no-repeat center /cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	transition: transform 1s linear;
+}
+.startBox .center{
+	width: 551px;
+	height: 281px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-40%,0);
+}
+.startBox .center img:nth-child(1){
+	width: 350px;
+	position: absolute;
+	left: 140px;
+	top: -20px;
+}
+.startBox .center img:nth-child(2){
+	width: 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate3d(0,0,0) scale(1);
+	transition: 1.6s;
+}
+.startBox .center img:nth-child(3){
+	width: 280px;
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+}
+.startBox .center img:nth-child(4){
+	width: 546px;
+	position: absolute;
+	left: 20;
+	bottom: -30px;
+	transform: translate3d(0,0,0) scale(1);
+	transition: 3s;
+}
+.startBox .center img:nth-child(5){
+	width: 140px;
+	position: absolute;
+	right: 80px;
+	top: 0px;
+}
+.startBox .center img:nth-child(6){
+	width: 84px;
+	position: absolute;
+	left: 50%;
+	bottom: -100px;
+	transform: translate3d(-50%,0,0) scale(1);
+	transition: 0.4s;
+}
+.startBox .center img:nth-child(6):hover{
+	cursor: pointer;
+}
+.playBox{
+	width: 100%;
+	height: 100%;
+	background: url(../img/playbg.png) no-repeat center /cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: transform 1s linear;
+}
+.playBox .playTop{
+	width: 370px;
+	height: 50px;
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.playBox .playTop .playLeft{
+	width: 205px;
+	height: 50px;
+	padding: 13px 11px 12px 58px;
+	box-sizing: border-box;
+	background: url(../img/life.png) no-repeat center /cover;
+}
+.playBox .playTop .playRight{
+	width: 149px;
+	height: 50px;
+	background: url(../img/score.png) no-repeat center /cover;
+	position: relative;
+}
+.playBox .voice{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	top: 20px;
+}
+.playBox .voice:hover{
+	cursor: pointer;
+}
+.playBox .voice .inVoice{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.playBox .voice .tVoice{
+	z-index: 3;
+}
+.playBox .main{
+	width: 1200px;
+	height: 530px;
+	background: rgba(255,255,255,0.3);
+	overflow: hidden;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate3d(-50%,0,0);
+}
+.playBox .main .picture{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+}
+.playBox .playTop .playLeft .lifeNum{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(to bottom,#f67d7d,#d01f1f);
+	box-shadow: 2px -2px 5px 0px #aa100d inset,0px 2px 5px 0px #e03128 inset;
+}
+.playBox .playTop .playRight .scoreNum{
+	font-size: 18px;
+	color: #fff;
+	position: absolute;
+	right: 35px;
+	top: 18px;
+	font-weight: bold;
+	-webkit-text-stroke: 1px #4a2a0d;
+}
+.nextBox{
+	width: 100%;
+	height: 100%;
+	background: url(../img/playbg.png) no-repeat center /cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+.nextBox .nextTop{
+	width: 370px;
+	height: 50px;
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.nextBox .nextTop .nextLeft{
+	width: 205px;
+	height: 50px;
+	padding: 13px 11px 12px 58px;
+	box-sizing: border-box;
+	background: url(../img/life.png) no-repeat center /cover;
+}
+.nextBox .nextTop .nextRight{
+	width: 149px;
+	height: 50px;
+	background: url(../img/score.png) no-repeat center /cover;
+	position: relative;
+}
+.nextBox .nextTop .nextLeft .lifeNum{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(to bottom,#f67d7d,#d01f1f);
+	box-shadow: 2px -2px 5px 0px #aa100d inset,0px 2px 5px 0px #e03128 inset;
+}
+.nextBox .nextTop .nextRight .scoreNum{
+	font-size: 18px;
+	color: #fff;
+	position: absolute;
+	right: 35px;
+	top: 18px;
+	font-weight: bold;
+	-webkit-text-stroke: 1px #4a2a0d;
+}
+.nextBox .set{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	top: 20px;
+}
+.nextBox .set .setImg{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.nextBox .set .setImg:hover{
+	cursor: pointer;
+}
+.nextBox .set .setDel{
+	width: 50px;
+	height: 0;
+	border-radius: 25px;
+	background: #74b7d7;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+.nextBox .set .setDel img{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+}
+.nextBox .set .setDel img:hover{
+	cursor: pointer;
+}
+.nextBox .set .setDel img:nth-child(2n+1){
+	left: 5px;
+	top: 60px;
+}
+.nextBox .set .setDel img:nth-child(2n){
+	left: 5px;
+	top: 110px;
+}
+.nextBox .set .setDel img:nth-child(3),.nextBox .set .setDel img:nth-child(4){
+	display: none;
+}
+.nextBox .win .girl{
+	width: 386px;
+	height: 325px;
+	background: url(../img/startSmall.png) no-repeat center /cover;
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translate3d(-50%,0,0);
+}
+.nextBox .win .panel{
+	width: 513px;
+	height: 193px;
+	background: url(../img/Panel.png) no-repeat center /cover;
+	position: absolute;
+	top: 320px;
+	left: 50%;
+	transform: translate3d(-55%,0,0);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.nextBox .win .success{
+	width: 325px;
+	height: 91px;
+	background: url(../img/success.png) no-repeat center /cover;
+	position: absolute;
+	top: 275px;
+	left: 50%;
+	transform: translate3d(-55%,0,0);
+}
+.nextBox .win .panel p{
+	margin-top: 7px;
+	color: #b5591a;
+	font-size: 24px;
+	font-weight: bold;
+}
+.nextBox .win .nextBtn{
+	width: 80px;
+	height: 80px;
+	background: url(../img/next.png) no-repeat center /cover;
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	transform: translate3d(-90%,0,0);
+	transition: 0.4s;
+}
+.nextBox .lose .panel{
+	width: 513px;
+	height: 193px;
+	background: url(../img/Panel.png) no-repeat center /cover;
+	position: absolute;
+	top: 320px;
+	left: 50%;
+	transform: translate3d(-55%,0,0);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.nextBox .lose .panel p{
+	margin-top: 7px;
+	color: #b5591a;
+	font-size: 24px;
+	font-weight: bold;
+}
+.nextBox .lose .replay{
+	width: 80px;
+	height: 80px;
+	background: url(../img/replay.png) no-repeat center /cover;
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	transform: translate3d(-90%,0,0);
+	transition: 0.4s;
+}
+.nextBox .win .nextBtn:hover,.nextBox .lose .replay:hover{
+	cursor: pointer;
+}

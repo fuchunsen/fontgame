@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打字游戏</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/base_PC.css">
+	<script src="js/index.js"></script>
+	<script src="js/function.js"></script>
+	<script src="js/animate.js"></script>
+</head>
+<body>
+	<audio src="music/Remix.mp3" autoplay="autoplay" loop="loop"></audio>
+	<div class="loadingBox">
+		<div class="girl"></div>
+		<div class="panel">
+			<p>玩命加载中……</p>
+			<div class="tiao">
+				<div class="jindu"></div>
+				<p>LOADING...<span class="zi">0</span>%</p>
+			</div>
+			<p>欢迎进入游戏，限时超级大礼包！开启即发送</p>
+		</div>
+		<div class="loading"></div>
+	</div>
+
+	<div class="startBox">
+		<div class="center">
+			<img src="img/startBig.png">
+			<img src="img/startHappy.png">
+			<img src="img/startSmall.png">
+			<img src="img/startFont.png">
+			<img src="img/startCat.png">
+			<img src="img/playBtn.png">
+		</div>
+	</div>
+
+	<div class="playBox">
+		<div class="playTop">
+			<div class="playLeft">
+				<div class="lifeNum"></div>
+			</div>
+			<div class="playRight">
+				<p class="scoreNum">0</p>
+			</div>
+		</div>
+		<div class="voice">
+			<img class="inVoice tVoice" src="img/voice.png">
+			<img class="inVoice" src="img/novoice.png">
+		</div>
+		<div class="main"></div>
+	</div>
+
+	<div class="nextBox">
+		<div class="nextTop">
+			<div class="nextLeft">
+				<div class="lifeNum"></div>
+			</div>
+			<div class="nextRight">
+				<p class="scoreNum">0</p>
+			</div>
+		</div>
+		<div class="set">
+			<img class="setImg" src="img/set.png">
+			<div class="setDel">
+				<img src="img/kuoyin.png">
+				<img src="img/music.png">
+				<img src="img/disable.png">
+				<img src="img/disable.png">
+			</div>
+		</div>
+		<div class="win">
+			<div class="girl"></div>
+			<div class="panel">
+				<p>闯关成功！</p>
+			</div>
+			<div class="success"></div>
+			<div class="nextBtn"></div>
+		</div>
+		<div class="lose">
+			<div class="panel">
+				<p>闯关失败</p>
+			</div>
+			<div class="replay"></div>
+		</div>
+	</div>
+</body>
+</html>
